@@ -1,0 +1,69 @@
+.skills, .skills-list {
+	@include flexbox();	
+}
+
+.skills {
+	@include flex-direction(#{column});
+	@include justify-content(#{center});
+	@include align-items(#{center});
+	@include pad(1em);
+	background: $g-black;
+	h2 {
+		@include margin(1em 0 .5em);
+	}
+}
+
+.tools-container {
+	@include margin(0 0 .5em);
+	&:hover .tools {
+		transform: scale(0.8);
+	}
+}
+
+.tools {
+	height: 3em;
+	width: 3em;
+	@include transition(all .4s ease);
+}
+
+.skills-list {
+	@include flex-direction(#{row});
+	@include flex-wrap(#{wrap});
+	@include justify-content(#{space-around});
+	margin-top: 0;
+	@media (min-width: $break-m) {
+		width: 80%;
+	}
+	@media (min-width: $break-l) {
+		width: 60%;
+	}
+	li {
+		@include flexbox();
+		@include justify-content(#{center});
+		@include margin(1em);
+		@include transition(all .5s ease);
+		border: 1px solid $white;
+		width: 6em;
+		overflow: visible; // for clicked span size
+		/* @extend %cursor-pointer; */
+		/* &:hover span.skill {
+			border: 1px solid $white;
+			@include border-radius(50%);
+		} */
+	}
+	span.skill {
+		@include transition(all .4s ease);
+		@include pad(.5em);
+		border: 1px solid transparent;
+	}
+}
+
+.highlight-skill-item { // set in JS 
+	transform: rotateX(360deg) scale(1.2);
+	background: $white;
+	color: $ebony-clay;
+}
+
+.grow-skill { // set in JS
+	transform: scale(1.5);
+}

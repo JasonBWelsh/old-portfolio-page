@@ -1,0 +1,47 @@
+
+// Color Variables 
+
+$ebony-clay: #22313F;
+$madison: #2C3E50;
+$dark-madison: darken($madison, 15%);
+$m-green: #2c504e;
+$m-pink: #502c4a;
+$m-purple: #3a2c50;
+$m-yellow: #4e502c;
+$m-red: #502c38;
+
+
+$darkest-blue: #011f4b;
+$dark-blue: #03396c;
+$blue: 	#005b96;
+
+$green-blue: #6497b1;
+$light: #b3cde0;
+$light-purple: #363F5C;
+$purple-smoke: #e2dce5;
+
+
+$white: #fff;
+$black: #000;
+$grey: #767676;
+$dark: #323232;
+
+// gradient color variables
+$g-black: #272933;
+$g-white: #f8f8f7;
+$g-grey: #63665e;
+$g-orange: #ea693f;
+$g-light-grey: #a8a797;
+$g-slate: #79857d;
+$g-off-brown: #a08c74;
+// Fonts
+$font-stack-montserrat: 'Montserrat', sans-serif;
+$font-stack-exo: 'Exo', sans-serif;
+$font-stack-secondary: sans-serif;
+
+// Layout
+$max-width: 1400px;
+
+// Breakpoints
+$break-m: 768px;
+$break-l: 992px;

@@ -1,0 +1,56 @@
+.main-footer {
+	@include flexbox();
+	@include flex-direction(#{column});
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	@include pad(1em);
+	background: $black;
+	@media (min-width: $break-m) {
+		bottom: 0;
+		left: auto;
+		right: 0;
+		border: none;
+		background: none;
+	}
+}
+
+.footer-nav-container {
+	@media (min-width: $break-m) {
+		display: none;
+	}
+}
+
+.footer-nav-list,
+.social-list {
+	@include flexbox();
+}
+
+.footer-nav-list {
+	@include justify-content(#{space-between});
+	@include margin(0);
+}
+
+
+.social-list {
+	@include justify-content(#{space-around});
+	@include margin(1em 0 0);
+	@media (min-width: $break-m) {
+		@include flex-direction(#{column});
+		@include margin(0);
+		li {
+			@include margin(0 0 2em);
+		}
+	}
+}
+
+.social-icon {
+	height: 1.5em;
+	width: 1.5em;
+	@include transition(all .4s ease);
+	&:hover {
+		transform: scale(1.2);
+	}
+}
+

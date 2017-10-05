@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+
+body {
+	height: 100vh;
+	width: 100%;
+	@include font-styles($family: $font-stack-exo, $color: $white, $weight: #{normal}, $lh: 1.5);
+	background: $g-black;
+	background: linear-gradient(to right, $g-black, $g-grey, $g-slate, $g-off-brown, $g-slate, $g-black);
+} 
+
+
+a {
+	text-decoration: none;
+	color: $white;
+	@include transition(all .4s ease);
+	&:hover {
+		color: $green-blue;
+	} 
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	margin: 0;
+}
+
+h2 {
+	color: $g-white;
+}
+
+
+ul, ol {
+	list-style: none;
+	padding-left: 0;
+}
+
+// Hide and show classes
+
+.hide {
+	opacity: 0;
+}
+
+.show {
+	opacity: 1;
+}

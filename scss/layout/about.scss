@@ -1,0 +1,158 @@
+.about {
+	@include pad(1em);
+	@include flexbox();
+	@include justify-content(#{center});
+	@include align-items(#{center});
+	@include flex-direction(#{column});
+	background: $g-off-brown;
+	background: linear-gradient(-45deg, $g-off-brown, $g-slate);
+	h2 {
+		@include margin(2em 0 0);
+		color: $white;
+	}
+}
+
+.portrait-div {
+	position: relative; //for img text overlay
+	max-width: 12em;
+	.portrait-text {
+		@include transition(all .5s ease);
+		opacity: 0; // for hover over
+		position: absolute;
+		background: rgb(0, 0, 0);
+		background: rgba($black, .5);
+		padding: .3em;
+	}
+	span.hi {
+		top: 33%;
+		left: 1.5em;
+		transform: translateX(-3em);
+		@media (min-width: $break-m) {
+			top: 25%;
+			left: 2em;
+		}
+	}
+	span.imJason {
+		bottom: 10%;
+		right: 2.5em;
+		transform: translateX(3em);
+	}
+	@media (min-width: $break-m) {
+		max-width: 17em;
+	}
+	&:hover .portrait-text {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.portrait {
+	@include margin(2em 0 0);
+	max-height: 12em;
+	max-width: 12em;
+	@include border-radius(50%);
+	border: 1px solid $g-black;
+	@include transition(all .4s ease-out);
+	@media (min-width: $break-m) {
+		@include margin(3em 0 0);
+	}
+	&:hover {
+		transform: scale(1.1);
+	}
+}
+
+.about-text {
+	@include margin(0 0 1em);
+	@include pad(1em);
+	text-align: center;
+	line-height: 2;
+	p {
+		@include margin(0);
+		@include pad(.5em);
+	}
+	@media (min-width: $break-m) {
+		width: 80%;
+		@include margin(0 0 2em);
+	}
+	@media (min-width: $break-l) {
+		width: 60%;
+	}
+}
+
+.about-list {
+	@include flexbox();
+	@include flex-wrap(#{wrap});
+	@include justify-content(#{space-around});
+	@include align-items(#{center});
+		li {
+		@include flexbox();
+		@include justify-content(#{center});
+		@include align-items(#{center});
+		@include border-radius(5em);
+		background: $ebony-clay;
+		height: 4.5em;
+		width: 4.5em;
+		color: $white;
+		font-size: .9rem;
+		@extend %cursor-pointer;
+		@include transition(all .4s ease);
+		@media (min-width: $break-m) {
+			&:hover {
+				background: lighten($ebony-clay, 10%);
+			}
+		}
+	}
+}
+
+.about-card-container {
+	@include flexbox();
+	@include flex-direction(#{column});
+	@include justify-content(#{center});
+	@include align-items(#{center});
+	@include margin(2em 0 0);
+	@include pad(1em);
+	color: $white;
+	@include border-radius(5em);
+	/* background: $g-grey; */
+	padding-bottom: 1em;
+	@media (min-width: $break-m) {
+		margin: 0;
+	}
+}
+
+.about-card-img {
+	height: 13em;
+	width: 13em;
+	@include margin(1em 0 0);
+	@include border-radius(50%);
+	filter: grayscale(1);
+	@include transition(all .4s ease);
+	&:hover {
+		transform: scale(1.2);
+		filter: none;
+	}
+}
+
+span.dog-link { 
+	color: $white;
+	background: $madison;
+	@include pad(.1em .5em);
+	@include border-radius(.5em);
+	@include transition(all .4s ease);
+	@extend %cursor-pointer;
+	&:hover {
+		transform: scale(1.2);
+	}
+}
+
+//classes to set/remove in JS for about nav display
+.about-card {
+	display: none;
+}
+.display {
+	display: block;
+}
+
+.highlight-about {
+	background: lighten($blue, 15%)!important;
+}

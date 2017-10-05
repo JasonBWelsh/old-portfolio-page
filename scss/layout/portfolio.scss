@@ -1,0 +1,114 @@
+.portfolio {
+	@include pad(1em);
+	@include flexbox();
+	@include justify-content(#{center});
+	@include align-items(#{center});
+	@include flex-direction(#{column});
+	h2 {
+		@include margin(3em 0);
+	}
+}
+
+.project-wrapper {
+	@include flexbox();
+	@include flex-wrap(#{wrap});
+	@include justify-content(#{space-around});
+	@include align-content(#{space-around});
+	@include margin(0 0 2em);
+}
+
+// project cards
+
+.project {
+	position: relative;
+  	@include margin(1em);
+  	@include pad(2em);
+  	background: $g-black;
+  	height: 19em;
+  	width: 19em;
+  	border: 1px solid $g-black;
+  	overflow: hidden;
+  	@media (min-width: $break-m) {
+  		height: 20em;
+  		width: 20em;
+  	}
+  	@media (min-width: $break-l) {
+  		flex: 1 30%;
+  	}
+  	h3 {
+  		@include margin(1em 0);
+  		color: $white;
+  	}
+  	p {
+  		@include margin(auto 0);
+  		font-size: .9rem;
+  	}
+}
+
+
+.project-overlay {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0; 
+	left: 0; 
+	background: $g-black;
+	@include flexbox();
+	@include flex-direction(#{column});
+	@include justify-content(#{center});
+	@include align-items(#{center});
+	@include pad(1em);
+	p {
+		text-align: center;
+	}
+}
+
+.slide .project-overlay {
+	/* @include border-radius(.5em); */
+}
+
+
+.project-img {
+	height: 100%;
+	width: 100%;
+}
+
+// project interactions 
+.slide .project-overlay,
+.slide img {
+  transition: transform .4s ease-out;
+}
+
+.slide .project-overlay {
+  transform: translateX(-100%);
+}
+
+.slide:hover .project-overlay {
+  transform: translateX(0);
+}
+
+.slide:hover img {
+  transform: translateX(100%);
+}
+
+// project buttons
+.project-button-container {
+	@include flexbox();
+	@include flex-direction(#{row});
+	@include justify-content(#{center});
+	@include margin(auto 0 1em);
+}
+
+.project-button {
+	@include margin(0 .5em);
+	@include pad(.5em);
+	color: $white;
+	@include border-radius(50%);
+	border: 1px solid $white;
+	@include transition(all .4s ease);
+	&:hover {
+		color: $white;
+		border-color: $white;
+		transform: scale(1.1);
+	}
+}
