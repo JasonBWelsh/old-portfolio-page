@@ -451,14 +451,7 @@ ul, ol {
   -ms-transition: opacity 2s ease;
   -o-transition: opacity 2s ease;
   transition: opacity 2s ease;
-  /* background: $black; */
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), #000 url(../img/bonEchoFall.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  /* background: rgba($black, .5); */
-  /* background: linear-gradient(to right, rgba($black, .3), $black, rgba($black, .3)); */
+  background: #272933;
   border-bottom: 1px solid #000; }
   @media (min-width: 768px) {
     .main-header {
@@ -511,7 +504,7 @@ ul, ol {
       position: fixed;
       top: 0;
       left: 0;
-      background: rgba(39, 41, 51, 0.7);
+      background: rgba(39, 41, 51, 0.9);
       z-index: 1000; } }
 
 .main-nav-list {
@@ -543,12 +536,7 @@ ul, ol {
   @media (min-width: 768px) {
     .main-nav-list li {
       margin: 0 0.5em;
-      padding: 0.5em 0.25em;
-      border: 1px solid #f8f8f7;
-      -webkit-border-radius: 5em;
-      border-radius: 5em;
-      background-clip: padding-box;
-      /* stops bg color from leaking outside the border: */ }
+      padding: 0.5em 0.25em; }
       .main-nav-list li:hover {
         background: rgba(255, 255, 255, 0.1); } }
   .main-nav-list li a {
