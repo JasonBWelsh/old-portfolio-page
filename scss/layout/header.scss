@@ -12,18 +12,23 @@
 
 .name {
 	@include margin(2em 0 0);
+	@include font-styles($family: $font-stack-playfair-display);
 	text-transform: uppercase;
 	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              	 0px 8px 13px rgba(0,0,0,0.1),
              	 0px 18px 23px rgba(0,0,0,0.1);
 	@media (min-width: #{$break-m}) {
-		@include margin(5em 0 0);
+		@include margin(3.5em 0 0);
+		@include font-styles($size: 2.5rem);
 	}
 }
 
 .name-initial {
 	font-size: 2.5rem;
-	color: $g-off-brown;
+	/* color: $light-blue; */
+	@media (min-width: #{$break-m}) {
+		@include font-styles($size: 3rem);
+	}
 }
 
 .name-icon-container {
@@ -124,7 +129,7 @@
 }
 
 .inner-bar {
-	fill: $g-off-brown;
+	fill: $light-blue;
 	animation: rotate-and-pulse 5s;
 }
 

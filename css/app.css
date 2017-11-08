@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400");
-@import url("https://fonts.googleapis.com/css?family=Exo");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
 .header-down-arrow:hover, .about-list li, span.dog-link {
   cursor: pointer; }
 
@@ -402,7 +402,7 @@ template {
 body {
   height: 100vh;
   width: 100%;
-  font-family: "Exo", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #fff;
   font-weight: normal;
   line-height: 1.5;
@@ -460,15 +460,20 @@ ul, ol {
 
 .name {
   margin: 2em 0 0;
+  font-family: "Playfair Display", serif;
   text-transform: uppercase;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 18px 23px rgba(0, 0, 0, 0.1); }
   @media (min-width: 768px) {
     .name {
-      margin: 5em 0 0; } }
+      margin: 3.5em 0 0;
+      font-size: 2.5rem; } }
 
 .name-initial {
   font-size: 2.5rem;
-  color: #a08c74; }
+  /* color: $light-blue; */ }
+  @media (min-width: 768px) {
+    .name-initial {
+      font-size: 3rem; } }
 
 .name-icon-container {
   display: -webkit-box;
@@ -588,7 +593,7 @@ ul, ol {
   animation: pulse 5s; }
 
 .inner-bar {
-  fill: #a08c74;
+  fill: #30aeff;
   animation: rotate-and-pulse 5s; }
 
 @keyframes grow {
