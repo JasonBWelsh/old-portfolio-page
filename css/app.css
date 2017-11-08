@@ -452,6 +452,7 @@ ul, ol {
   -o-transition: opacity 2s ease;
   transition: opacity 2s ease;
   background: #272933;
+  background: linear-gradient(to top, #272933, #79857d);
   border-bottom: 1px solid #000; }
   @media (min-width: 768px) {
     .main-header {

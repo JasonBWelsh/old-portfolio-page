@@ -8,8 +8,8 @@ Error: Undefined mixin 'pad'.
 3: 	text-align: center;
 4: 	@include transition(opacity 2s ease);
 5: 	background: rgba($g-black, 1); 
-6: 	border-bottom: 1px solid $black;
-7: 	@media (min-width: $break-m) {
+6: 	background: linear-gradient(to top, $g-black, $g-slate);
+7: 	border-bottom: 1px solid $black;
 
 Backtrace:
 scss/layout/header.scss:2:in `pad'
@@ -65,4 +65,4 @@ C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adap
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'pad'.\A         on line 2 of scss/layout/header.scss, in `pad'\A         from line 2 of scss/layout/header.scss\A \A 1: .main-header {\A 2: 	@include pad(1em);\A 3: 	text-align: center;\A 4: 	@include transition(opacity 2s ease);\A 5: 	background: rgba($g-black, 1); \A 6: 	border-bottom: 1px solid $black;\A 7: 	@media (min-width: $break-m) {"; }
+  content: "Error: Undefined mixin 'pad'.\A         on line 2 of scss/layout/header.scss, in `pad'\A         from line 2 of scss/layout/header.scss\A \A 1: .main-header {\A 2: 	@include pad(1em);\A 3: 	text-align: center;\A 4: 	@include transition(opacity 2s ease);\A 5: 	background: rgba($g-black, 1); \A 6: 	background: linear-gradient(to top, $g-black, $g-slate);\A 7: 	border-bottom: 1px solid $black;"; }

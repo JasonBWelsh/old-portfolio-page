@@ -3,6 +3,7 @@
 	text-align: center;
 	@include transition(opacity 2s ease);
 	background: rgba($g-black, 1); 
+	background: linear-gradient(to top, $g-black, $g-slate);
 	border-bottom: 1px solid $black;
 	@media (min-width: $break-m) {
 		height: 100vh;
