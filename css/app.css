@@ -513,6 +513,9 @@ ul, ol {
       background: rgba(39, 41, 51, 0.9);
       z-index: 1000; } }
 
+.title {
+  color: #b3cde0; }
+
 .main-nav-list {
   margin-top: 1em;
   display: -webkit-box;
@@ -593,7 +596,7 @@ ul, ol {
   animation: pulse 5s; }
 
 .inner-bar {
-  fill: #30aeff;
+  fill: #b3cde0;
   animation: rotate-and-pulse 5s; }
 
 @keyframes grow {

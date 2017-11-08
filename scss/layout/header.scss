@@ -58,6 +58,10 @@
 	}
 }
 
+.title {
+	color: $light;
+}
+
 .main-nav-list {
 	margin-top: 1em;
 	@include flexbox();
@@ -129,7 +133,7 @@
 }
 
 .inner-bar {
-	fill: $light-blue;
+	fill: $light;
 	animation: rotate-and-pulse 5s;
 }
 
