@@ -425,7 +425,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
 h2 {
-  color: #f8f8f7; }
+  font-family: "Playfair Display", serif;
+  color: #f8f8f7;
+  text-transform: uppercase; }
 
 ul, ol {
   list-style: none;
@@ -802,7 +804,7 @@ ul, ol {
   padding: 1em;
   background: #272933; }
   .skills h2 {
-    margin: 1em 0 0.5em; }
+    margin: 1em 0; }
 
 .tools-container {
   margin: 0 0 0.5em; }

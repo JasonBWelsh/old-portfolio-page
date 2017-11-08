@@ -9,7 +9,7 @@
 	@include pad(1em);
 	background: $g-black;
 	h2 {
-		@include margin(1em 0 .5em);
+		@include margin(1em 0);
 	}
 }
 
