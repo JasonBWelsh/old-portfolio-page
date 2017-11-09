@@ -27,10 +27,10 @@
 }
 
 .skills-list {
+	@include margin(0 0 3em);
 	@include flex-direction(#{row});
 	@include flex-wrap(#{wrap});
 	@include justify-content(#{space-around});
-	margin-top: 0;
 	@media (min-width: $break-m) {
 		width: 80%;
 	}

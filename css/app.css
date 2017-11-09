@@ -821,6 +821,7 @@ ul, ol {
   transition: all 0.4s ease; }
 
 .skills-list {
+  margin: 0 0 3em;
   -webkit-flex-direction: row;
   -moz-flex-direction: row;
   -ms-flex-direction: row;
@@ -833,8 +834,7 @@ ul, ol {
   -moz-justify-content: space-around;
   -ms-justify-content: space-around;
   justify-content: space-around;
-  -ms-flex-pack: space-around;
-  margin-top: 0; }
+  -ms-flex-pack: space-around; }
   @media (min-width: 768px) {
     .skills-list {
       width: 80%; } }
