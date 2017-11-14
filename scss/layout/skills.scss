@@ -9,12 +9,12 @@
 	@include pad(1em);
 	background: $g-black;
 	h2 {
-		@include margin(1em 0);
+		@include margin(1em 0 2em);
 	}
 }
 
 .tools-container {
-	@include margin(0 0 .5em);
+	@include margin(0 0 1em);
 	&:hover .tools {
 		transform: scale(0.8);
 	}

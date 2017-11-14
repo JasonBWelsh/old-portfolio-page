@@ -547,9 +547,7 @@ ul, ol {
   @media (min-width: 768px) {
     .main-nav-list li {
       margin: 0 0.5em;
-      padding: 0.5em 0.25em; }
-      .main-nav-list li:hover {
-        background: rgba(255, 255, 255, 0.1); } }
+      padding: 0.5em 0.25em; } }
   .main-nav-list li a {
     padding: 1em 0.5em;
     color: #f8f8f7;
@@ -560,7 +558,11 @@ ul, ol {
     transition: all 0.4s ease; }
     @media (min-width: 768px) {
       .main-nav-list li a {
-        padding: 1em 0.5em; } }
+        padding: 1em 0.5em;
+        width: 100%;
+        height: 100%; }
+        .main-nav-list li a:hover {
+          background: rgba(255, 255, 255, 0.1); } }
 
 .header-arrow-container {
   margin: 4em 0 7em 0;
@@ -803,10 +805,10 @@ ul, ol {
   padding: 1em;
   background: #272933; }
   .skills h2 {
-    margin: 1em 0; }
+    margin: 1em 0 2em; }
 
 .tools-container {
-  margin: 0 0 0.5em; }
+  margin: 0 0 1em; }
   .tools-container:hover .tools {
     transform: scale(0.8); }
 
@@ -1253,7 +1255,7 @@ span.dog-link {
 
 .thankyou-message {
   padding: 1em;
-  background: rgba(0, 0, 0, 0.5); }
+  /* background: rgba($black, .5); */ }
 
 .contact-links-list {
   margin: 1em 0;

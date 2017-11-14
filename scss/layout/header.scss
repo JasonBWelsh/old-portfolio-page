@@ -77,9 +77,6 @@
 	@media (min-width: $break-m) {
 		@include margin(0 .5em);
 		@include pad(.5em .25em);
-		&:hover {
-			background: rgba($white, .1);
-		}
 	}
 	a {
 		@include pad(1em .5em);
@@ -87,6 +84,11 @@
 		@include transition(all .4s ease);
 		@media (min-width: $break-m) {
 			@include pad(1em .5em);
+			width: 100%;
+			height: 100%;
+			&:hover {
+				background: rgba($white, .1);
+			}
 		}
 	}
 }
