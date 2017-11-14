@@ -131,10 +131,46 @@ $(document).ready(function() {
 
 });
 
-// Waypoints Section 
-var portfolio = new Waypoint({
-  element: document.getElementById('portfolio'),
-  handler: function(direction) {
-    console.log('Scrolled to waypoint!')
-  }
-})
+
+
+// jQuery smooth scroll
+
+//stanhub.com/sticky-header-change-navigation-active-class-on-page-scroll-with-jquery/ -
+/*  $(document).ready(function () {
+    $(document).on("scroll", onScroll);
+ 
+    $('a[href^="#"]').on('click', function (e) {
+      e.preventDefault();
+      $(document).off("scroll");
+ 
+      $('a').each(function () {
+        $(this).removeClass('active');
+      })
+      $(this).addClass('active');
+ 
+      var target = this.hash;
+      $target = $(target);
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top+2
+      }, 500, 'swing', function () {
+        window.location.hash = target;
+        $(document).on("scroll", onScroll);
+      });
+    });
+  });
+ 
+  function onScroll(event){
+    var scrollPosition = $(document).scrollTop();
+    $('nav a').each(function () {
+      var currentLink = $(this);
+      var refElement = $(currentLink.attr("href"));
+      if (refElement.position().top <= scrollPosition && refElement.position().top + refElement.height() > scrollPosition) {
+        $('nav ul li a').removeClass("active");
+        currentLink.addClass("active");
+      }
+      else{
+        currentLink.removeClass("active");
+      }
+    });
+  }*/
+

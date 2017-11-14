@@ -111,6 +111,7 @@
 	@include transition(all .4s ease);
 	@media (min-width: $break-m) {
 		width: 50%;
+		margin-bottom: 5em;
 	}
 	@media (min-width: $break-l) {
 		width: 30%;
