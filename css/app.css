@@ -1246,6 +1246,9 @@ span.dog-link {
   -moz-align-items: center;
   -ms-align-items: center;
   align-items: center; }
+  @media (min-width: 768px) {
+    .contact-form-wrapper {
+      margin-bottom: 4em; } }
 
 .bottom-space {
   margin: 0 0 103px; }

@@ -90,6 +90,9 @@
 	@include flex-direction(#{column});
 	@include justify-content(#{center});
 	@include align-items(#{center});
+	@media(min-width: $break-m) {
+		margin-bottom: 4em;
+	}
 }
 
 .bottom-space { // space to show content bc of sticky footer
