@@ -41,6 +41,21 @@
 		@include margin(0);
 		li {
 			@include margin(0 0 2em);
+			height: 40px;
+			width: 40px;
+			@media (min-width: $break-m) {
+				@include border-radius(50%);
+				@include pad(.5em);
+				// background: rgba($black, .4);
+				background: $light-blue;
+				// same as header nav styles
+				// border: 1px solid $g-slate;
+				box-shadow: 3px 3px 7px -1px rgba(0,0,0,0.75);
+			}
+			a {
+				height: 100%;
+				width: 100%;
+			}
 		}
 	}
 }
@@ -53,4 +68,3 @@
 		transform: scale(1.2);
 	}
 }
-

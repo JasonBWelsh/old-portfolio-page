@@ -1,5 +1,5 @@
 .skills, .skills-list {
-	@include flexbox();	
+	@include flexbox();
 }
 
 .skills {
@@ -10,6 +10,7 @@
 	background: $g-black;
 	h2 {
 		@include margin(1em 0 2em);
+		color: $white;
 	}
 }
 
@@ -58,7 +59,7 @@
 	}
 }
 
-.highlight-skill-item { // set in JS 
+.highlight-skill-item { // set in JS
 	transform: rotateX(360deg) scale(1.2);
 	background: $white;
 	color: $ebony-clay;

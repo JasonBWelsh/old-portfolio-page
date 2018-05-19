@@ -4,47 +4,47 @@
 	@include justify-content(#{center});
 	@include align-items(#{center});
 	@include flex-direction(#{column});
-	background: $g-off-brown;
-	background: linear-gradient(-45deg, $g-off-brown, $g-slate);
+	color: $black;
+	// background: $g-off-brown;
+	// background: linear-gradient(-45deg, $g-off-brown, $g-slate);
 	h2 {
 		@include margin(2em 0 0);
-		color: $white;
 	}
 }
 
-.portrait-div {
-	position: relative; //for img text overlay
-	max-width: 12em;
-	.portrait-text {
-		@include transition(all .5s ease);
-		opacity: 0; // for hover over
-		position: absolute;
-		background: rgb(0, 0, 0);
-		background: rgba($black, .5);
-		padding: .3em;
-	}
-	span.hi {
-		top: 33%;
-		left: 1.5em;
-		transform: translateX(-3em);
-		@media (min-width: $break-m) {
-			top: 25%;
-			left: 2em;
-		}
-	}
-	span.imJason {
-		bottom: 10%;
-		right: 2.5em;
-		transform: translateX(3em);
-	}
-	@media (min-width: $break-m) {
-		max-width: 17em;
-	}
-	&:hover .portrait-text {
-		opacity: 1;
-		transform: translateX(0);
-	}
-}
+// .portrait-div {
+// 	position: relative; //for img text overlay
+// 	max-width: 12em;
+// 	.portrait-text {
+// 		@include transition(all .5s ease);
+// 		opacity: 0; // for hover over
+// 		position: absolute;
+// 		background: rgb(0, 0, 0);
+// 		background: rgba($black, .5);
+// 		padding: .3em;
+// 	}
+// 	span.hi {
+// 		top: 33%;
+// 		left: 1.5em;
+// 		transform: translateX(-3em);
+// 		@media (min-width: $break-m) {
+// 			top: 25%;
+// 			left: 2em;
+// 		}
+// 	}
+// 	span.imJason {
+// 		bottom: 10%;
+// 		right: 2.5em;
+// 		transform: translateX(3em);
+// 	}
+// 	@media (min-width: $break-m) {
+// 		max-width: 17em;
+// 	}
+// 	&:hover .portrait-text {
+// 		opacity: 1;
+// 		transform: translateX(0);
+// 	}
+// }
 
 .portrait {
 	@include margin(2em 0 0);
@@ -111,7 +111,7 @@
 	@include align-items(#{center});
 	@include margin(2em 0 0);
 	@include pad(1em);
-	color: $white;
+	// color: $black;
 	@include border-radius(5em);
 	/* background: $g-grey; */
 	padding-bottom: 1em;
@@ -133,7 +133,7 @@
 	}
 }
 
-span.dog-link { 
+span.dog-link {
 	color: $white;
 	background: $madison;
 	@include pad(.1em .5em);
