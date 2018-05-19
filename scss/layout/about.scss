@@ -4,7 +4,7 @@
 	@include justify-content(#{center});
 	@include align-items(#{center});
 	@include flex-direction(#{column});
-	color: $black;
+	color: $g-black;
 	// background: $g-off-brown;
 	// background: linear-gradient(-45deg, $g-off-brown, $g-slate);
 	h2 {
@@ -46,20 +46,20 @@
 // 	}
 // }
 
-.portrait {
-	@include margin(2em 0 0);
-	max-height: 12em;
-	max-width: 12em;
-	@include border-radius(50%);
-	border: 1px solid $g-black;
-	@include transition(all .4s ease-out);
-	@media (min-width: $break-m) {
-		@include margin(3em 0 0);
-	}
-	&:hover {
-		transform: scale(1.1);
-	}
-}
+// .portrait {
+// 	@include margin(2em 0 0);
+// 	max-height: 12em;
+// 	max-width: 12em;
+// 	@include border-radius(50%);
+// 	border: 1px solid $g-black;
+// 	@include transition(all .4s ease-out);
+// 	@media (min-width: $break-m) {
+// 		@include margin(3em 0 0);
+// 	}
+// 	&:hover {
+// 		transform: scale(1.1);
+// 	}
+// }
 
 .about-text {
 	@include margin(0 0 1em);

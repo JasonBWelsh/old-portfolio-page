@@ -9,7 +9,7 @@ Error: Undefined mixin 'pad'.
 4: 	@include justify-content(#{center});
 5: 	@include align-items(#{center});
 6: 	@include flex-direction(#{column});
-7: 	color: $black;
+7: 	color: $g-black;
 
 Backtrace:
 scss/layout/about.scss:2:in `pad'
@@ -69,4 +69,4 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/interna
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'pad'.\A         on line 2 of scss/layout/about.scss, in `pad'\A         from line 2 of scss/layout/about.scss\A \A 1: .about {\A 2: 	@include pad(1em);\A 3: 	@include flexbox();\A 4: 	@include justify-content(#{center});\A 5: 	@include align-items(#{center});\A 6: 	@include flex-direction(#{column});\A 7: 	color: $black;"; }
+  content: "Error: Undefined mixin 'pad'.\A         on line 2 of scss/layout/about.scss, in `pad'\A         from line 2 of scss/layout/about.scss\A \A 1: .about {\A 2: 	@include pad(1em);\A 3: 	@include flexbox();\A 4: 	@include justify-content(#{center});\A 5: 	@include align-items(#{center});\A 6: 	@include flex-direction(#{column});\A 7: 	color: $g-black;"; }

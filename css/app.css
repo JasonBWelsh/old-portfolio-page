@@ -424,7 +424,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
 h2 {
-  color: #000;
+  color: #272933;
   text-transform: uppercase; }
 
 ul, ol {
@@ -459,11 +459,31 @@ ul, ol {
     .main-header {
       height: 100vh; } }
 
+.portrait {
+  margin: 2em 0 0;
+  max-height: 12em;
+  max-width: 12em;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-clip: padding-box;
+  /* stops bg color from leaking outside the border: */
+  border: 1px solid #272933;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out; }
+  @media (min-width: 768px) {
+    .portrait {
+      margin: 3em 0 0; } }
+  .portrait:hover {
+    transform: scale(1.1); }
+
 .name {
   margin: 1em 0;
   font-family: "Playfair Display", serif;
   text-transform: uppercase;
-  color: #000; }
+  color: #272933; }
   @media (min-width: 768px) {
     .name {
       margin: 1em 0 0;
@@ -516,7 +536,7 @@ ul, ol {
       z-index: 1000; } }
 
 .title {
-  color: #000; }
+  color: #272933; }
 
 .main-nav-list {
   margin-top: 1em;
@@ -582,7 +602,7 @@ ul, ol {
     transform: scale(1.2); }
 
 .name-icon * {
-  fill: #000;
+  fill: #272933;
   transform-origin: 50% 50%; }
 
 .name-icon {
@@ -601,7 +621,7 @@ ul, ol {
 .header-down-arrow {
   border-radius: 50%;
   padding: .4em;
-  background: #000; }
+  background: #272933; }
 
 @keyframes grow {
   0% {
@@ -626,7 +646,7 @@ ul, ol {
 @keyframes rotate-and-pulse {
   50% {
     transform: rotate(180deg) scale(1.2);
-    fill: #000; } }
+    fill: #272933; } }
 .active {
   transform: translateX(0.2em);
   background: rgba(48, 174, 255, 0.4); }
@@ -910,29 +930,9 @@ ul, ol {
   -moz-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
-  color: #000; }
+  color: #272933; }
   .about h2 {
     margin: 2em 0 0; }
-
-.portrait {
-  margin: 2em 0 0;
-  max-height: 12em;
-  max-width: 12em;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */
-  border: 1px solid #272933;
-  -webkit-transition: all 0.4s ease-out;
-  -moz-transition: all 0.4s ease-out;
-  -ms-transition: all 0.4s ease-out;
-  -o-transition: all 0.4s ease-out;
-  transition: all 0.4s ease-out; }
-  @media (min-width: 768px) {
-    .portrait {
-      margin: 3em 0 0; } }
-  .portrait:hover {
-    transform: scale(1.1); }
 
 .about-text {
   margin: 0 0 1em;
