@@ -443,6 +443,9 @@ ul, ol {
 .contact {
   /* border-top: 1px solid $g-grey; */ }
 
+.main-container {
+  max-width: 1400px; }
+
 .main-header {
   padding: 1em;
   text-align: center;
@@ -457,7 +460,10 @@ ul, ol {
   background-repeat: no-repeat; }
   @media (min-width: 768px) {
     .main-header {
-      height: 100vh; } }
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; } }
 
 .portrait {
   margin: 2em 0 0;
