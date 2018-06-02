@@ -463,7 +463,8 @@ ul, ol {
       height: 100vh;
       display: flex;
       flex-direction: column;
-      justify-content: center; } }
+      justify-content: center;
+      align-items: center; } }
 
 .portrait {
   margin: 2em 0 0;
