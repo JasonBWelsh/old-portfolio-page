@@ -10,7 +10,7 @@ body {
 	width: 100%;
 	@include font-styles($family: $font-stack-open-sans, $color: $white, $weight: #{normal}, $lh: 1.5);
 	background: $off-white;
-	// background: linear-gradient(to right, $g-black, $g-grey, $g-slate, $g-off-brown, $g-slate, $g-black);
+	text-align: center;
 }
 
 

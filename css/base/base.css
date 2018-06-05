@@ -10,7 +10,7 @@ Error: Undefined mixin 'font-styles'.
 10: 	width: 100%;
 11: 	@include font-styles($family: $font-stack-open-sans, $color: $white, $weight: #{normal}, $lh: 1.5);
 12: 	background: $off-white;
-13: 	// background: linear-gradient(to right, $g-black, $g-grey, $g-slate, $g-off-brown, $g-slate, $g-black);
+13: 	text-align: center;
 14: }
 15: 
 16: 
@@ -59,18 +59,17 @@ C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:46
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:209:in `each'
 C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.4/lib/sass/plugin/compiler.rb:294:in `watch'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.4/lib/sass/plugin.rb:109:in `method_missing'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.4/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.4/lib/sass/exec/base.rb:52:in `parse'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.4/lib/sass/exec/base.rb:19:in `parse!'
+C:/Ruby24-x64/lib/ruby/gems/2.4.0/gems/sass-3.5.4/bin/sass:13:in `<top (required)>'
+C:/Ruby24-x64/bin/sass:23:in `load'
+C:/Ruby24-x64/bin/sass:23:in `<main>'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined mixin 'font-styles'.\A         on line 11 of scss/base/base.scss, in `font-styles'\A         from line 11 of scss/base/base.scss\A \A 6: \A 7: \A 8: body {\A 9: 	height: 100vh;\A 10: 	width: 100%;\A 11: 	@include font-styles($family: $font-stack-open-sans, $color: $white, $weight: #{normal}, $lh: 1.5);\A 12: 	background: $off-white;\A 13: 	// background: linear-gradient(to right, $g-black, $g-grey, $g-slate, $g-off-brown, $g-slate, $g-black);\A 14: }\A 15: \A 16: "; }
+  content: "Error: Undefined mixin 'font-styles'.\A         on line 11 of scss/base/base.scss, in `font-styles'\A         from line 11 of scss/base/base.scss\A \A 6: \A 7: \A 8: body {\A 9: 	height: 100vh;\A 10: 	width: 100%;\A 11: 	@include font-styles($family: $font-stack-open-sans, $color: $white, $weight: #{normal}, $lh: 1.5);\A 12: 	background: $off-white;\A 13: 	text-align: center;\A 14: }\A 15: \A 16: "; }

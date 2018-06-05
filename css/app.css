@@ -406,7 +406,8 @@ body {
   color: #fff;
   font-weight: normal;
   line-height: 1.5;
-  background: #f2f2f2; }
+  background: #f2f2f2;
+  text-align: center; }
 
 a {
   text-decoration: none;
@@ -444,8 +445,7 @@ ul, ol {
   /* border-top: 1px solid $g-grey; */ }
 
 .main-container {
-  max-width: 1400px;
-  text-align: center; }
+  max-width: 1400px; }
 
 .main-header {
   padding: 1em;
