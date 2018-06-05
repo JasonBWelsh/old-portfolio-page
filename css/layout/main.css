@@ -4,7 +4,8 @@ Error: Undefined variable: "$max-width".
 
 1: .main-container {
 2:   max-width: $max-width;
-3: }
+3:   margin: 0 auto;
+4: }
 
 Backtrace:
 scss/layout/main.scss:2
@@ -60,4 +61,4 @@ C:/Ruby24-x64/bin/sass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$max-width\".\A         on line 2 of scss/layout/main.scss\A \A 1: .main-container {\A 2:   max-width: $max-width;\A 3: }"; }
+  content: "Error: Undefined variable: \"$max-width\".\A         on line 2 of scss/layout/main.scss\A \A 1: .main-container {\A 2:   max-width: $max-width;\A 3:   margin: 0 auto;\A 4: }"; }
