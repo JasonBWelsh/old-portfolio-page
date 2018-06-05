@@ -444,7 +444,8 @@ ul, ol {
   /* border-top: 1px solid $g-grey; */ }
 
 .main-container {
-  max-width: 1400px; }
+  max-width: 1400px;
+  text-align: center; }
 
 .main-header {
   padding: 1em;
